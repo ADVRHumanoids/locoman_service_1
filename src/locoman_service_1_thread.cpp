@@ -25,7 +25,7 @@ using namespace yarp::math;
 locoman_service_1_thread::locoman_service_1_thread( std::string module_prefix, 
                              			yarp::os::ResourceFinder rf, 
                              			std::shared_ptr< paramHelp::ParamHelperServer > ph) :
-    control_thread( module_prefix, rf, ph ),
+                                        control_thread( module_prefix, rf, ph ),
     CoM_w_cmd(3, 0.0) ,
     CoM_w_up(3, 0.0) ,
     CoM_w_dw(3, 0.0) ,
