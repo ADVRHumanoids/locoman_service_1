@@ -294,7 +294,7 @@ bool locoman_service_1_thread::custom_init()
     thread_param.sched_priority = 99;
     
     model.setFloatingBaseLink("Waist");
-    yarp::sig::Vector q_current(robot.getNumberOfKinematicJoints(),0.0) ; // = robot.sensePosition();
+    yarp::sig::Vector q_current(locoman::utils::getNumberOfKinematicJoints(robot),0.0) ; // = robot.sensePosition();
     robot.idynutils.updateiDyn3Model(q_current, true);
     
     
