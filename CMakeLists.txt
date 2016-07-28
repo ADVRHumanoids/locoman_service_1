@@ -44,7 +44,6 @@ FIND_PACKAGE(idynutils REQUIRED)
 find_package(iDynTree REQUIRED)
 FIND_PACKAGE(GYM REQUIRED)
 FIND_PACKAGE(paramHelp REQUIRED)
-FIND_PACKAGE(kdl_codyco REQUIRED)
 
 
 # add include directories
@@ -52,7 +51,6 @@ INCLUDE_DIRECTORIES(include
 		    ${YARP_INCLUDE_DIRS} 
 		    ${idynutils_INCLUDE_DIRS}
 		    ${GYM_INCLUDE_DIRS}
-		    ${kdl_codyco_INCLUDE_DIRS}
 		    ${iDynTree_INCLUDE_DIRS}
 		    )
 		    
